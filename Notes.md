@@ -3,7 +3,7 @@
 # know abt cdn
 # bundler -------
 vite, web pack,parcel are bundlers
-minify, optimize, bundle,remove console logs these all are can be done by bundlers
+minify, optimize, bundle,remove console logs(on configuration) these all are can be done by bundlers
 
 create react app uses web pack 
 here we use parcel.
@@ -68,3 +68,25 @@ parcel takes image optimization as well
 parcel does caching while development
 
 # why react is fast?
+
+# how do you convert your code to work on old browser
+if your browser doesn't understand promises then a 
+polyfill is created for promise
+
+for example
+
+Array.map() is not supported in some broswer
+then our code is converted into older code of map.
+This is taken care by bable
+
+# what is babel?
+It is just a node pakage
+A black box which takes modern js code and gives old js i.e. polyfills
+
+# why parcel is beast 😃
+suppose we have helper library and it gave 20 utilities and we use only 2 utilities
+parcels ignores unused utilities as well
+This is called Tree Shaking - Removing unwanted code
+
+# npx == npm run
+
