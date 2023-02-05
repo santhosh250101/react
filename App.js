@@ -10,30 +10,32 @@
 
 import React from "react";
 import  ReactDOM  from "react-dom/client";
-const heading = React.createElement(
-    "h1",
-    {
-      id: "title",
-    },
-    "heading"
-  );
-  const heading1 = React.createElement(
-    "h1",
-    {
-      id: "title",
-    },
-    "heading1"
-  );
-  
-  const container = React.createElement(
-    "div",
-    {
-      id: "container",
-    },
-    [heading, heading1]
-  );
-  
-  // create root using createRoot
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  // passing react element inside root
-  root.render(container);
+
+const heading =(
+  <h1>
+    <h2>Hello world React Element</h2>
+  </h1>
+)
+const HeaderComponent = ()=>{
+  return(
+    <div>
+      <h1>Hello world</h1>
+      {heading}
+    </div>
+  )
+}
+// create root using createRoot
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// passing react element inside root
+root.render(<HeaderComponent/>);
+/*
+React Components
+1.Functional (new way)
+Component names start with capital
+
+2.Class based (old way)
+
+
+At the end of the day, HeadeComponent is a normal javascript
+function 
+*/

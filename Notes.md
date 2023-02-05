@@ -90,3 +90,13 @@ This is called Tree Shaking - Removing unwanted code
 
 # npx == npm run
 
+
+# JSX is not html inside js
+it is html like syntax in js
+
+JSX is html like syntax in js, but not html
+
+
+# component Composition
+
+using component inside a other component
